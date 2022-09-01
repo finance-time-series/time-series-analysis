@@ -1,0 +1,769 @@
+Namespace(batch=1024, data='tran', device='2', device_num=0, epoch=300, hh_size=128, hidden_size=1024, lr=0.001, model='rnn', n_layers=1, seed=2022, train_seq=30, type='elec', use_cuda='True', weight_decay=1e-05, y_seq=1)
+RNNNet(
+  (rnn): RNN(1, 1024, batch_first=True)
+  (fc): Linear(in_features=1024, out_features=1, bias=True)
+)
+# PARAMS : 1052673
+Memory_usage:705248256
+[Epoch:   1 (MSE)] Train: 1249.9869 | Valid : 1134.4475 | Test : 1685.8683
+[Epoch:   1 (MAPE)] Train: 71.9622 | Valid : 59.5547 | Test : 95.1647
+- Best loss (MSE) update!! Train: 1249.9869 | Valid : 1134.4475 | Test : 1685.8683 at Epoch   1
+- Best loss (MAPE) update!! Train: 71.9622 | Valid : 59.5547 | Test : 95.1647 at Epoch   1
+[Epoch:   2 (MSE)] Train: 816.5654 | Valid : 790.1717 | Test : 1251.4288
+[Epoch:   2 (MAPE)] Train: 49.6814 | Valid : 48.5010 | Test : 103.8354
+- Best loss (MSE) update!! Train: 816.5654 | Valid : 790.1717 | Test : 1251.4288 at Epoch   2
+- Best loss (MAPE) update!! Train: 49.6814 | Valid : 48.5010 | Test : 103.8354 at Epoch   2
+[Epoch:   3 (MSE)] Train: 587.9810 | Valid : 608.3120 | Test : 999.0469
+[Epoch:   3 (MAPE)] Train: 46.3305 | Valid : 49.5814 | Test : 116.3029
+- Best loss (MSE) update!! Train: 587.9810 | Valid : 608.3120 | Test : 999.0469 at Epoch   3
+- Best loss (MAPE) update!! Train: 46.3305 | Valid : 49.5814 | Test : 116.3029 at Epoch   3
+[Epoch:   4 (MSE)] Train: 483.9284 | Valid : 526.6725 | Test : 868.3405
+[Epoch:   4 (MAPE)] Train: 51.3335 | Valid : 54.1388 | Test : 127.9362
+- Best loss (MSE) update!! Train: 483.9284 | Valid : 526.6725 | Test : 868.3405 at Epoch   4
+- Best loss (MAPE) update!! Train: 51.3335 | Valid : 54.1388 | Test : 127.9362 at Epoch   4
+[Epoch:   5 (MSE)] Train: 445.8358 | Valid : 494.6157 | Test : 806.0748
+[Epoch:   5 (MAPE)] Train: 57.1511 | Valid : 58.1346 | Test : 136.2219
+- Best loss (MSE) update!! Train: 445.8358 | Valid : 494.6157 | Test : 806.0748 at Epoch   5
+- Best loss (MAPE) update!! Train: 57.1511 | Valid : 58.1346 | Test : 136.2219 at Epoch   5
+[Epoch:   6 (MSE)] Train: 434.9154 | Valid : 483.0941 | Test : 778.3178
+[Epoch:   6 (MAPE)] Train: 61.2049 | Valid : 60.6323 | Test : 140.9597
+- Best loss (MSE) update!! Train: 434.9154 | Valid : 483.0941 | Test : 778.3178 at Epoch   6
+- Best loss (MAPE) update!! Train: 61.2049 | Valid : 60.6323 | Test : 140.9597 at Epoch   6
+[Epoch:   7 (MSE)] Train: 432.5726 | Valid : 479.1235 | Test : 766.8674
+[Epoch:   7 (MAPE)] Train: 63.4107 | Valid : 61.8583 | Test : 143.2003
+- Best loss (MSE) update!! Train: 432.5726 | Valid : 479.1235 | Test : 766.8674 at Epoch   7
+- Best loss (MAPE) update!! Train: 63.4107 | Valid : 61.8583 | Test : 143.2003 at Epoch   7
+[Epoch:   8 (MSE)] Train: 432.0055 | Valid : 477.0321 | Test : 762.9684
+[Epoch:   8 (MAPE)] Train: 64.2412 | Valid : 61.9623 | Test : 143.3819
+- Best loss (MSE) update!! Train: 432.0055 | Valid : 477.0321 | Test : 762.9684 at Epoch   8
+- Best loss (MAPE) update!! Train: 64.2412 | Valid : 61.9623 | Test : 143.3819 at Epoch   8
+[Epoch:   9 (MSE)] Train: 429.2108 | Valid : 471.5369 | Test : 756.2294
+[Epoch:   9 (MAPE)] Train: 64.0872 | Valid : 61.4054 | Test : 142.4534
+- Best loss (MSE) update!! Train: 429.2108 | Valid : 471.5369 | Test : 756.2294 at Epoch   9
+- Best loss (MAPE) update!! Train: 64.0872 | Valid : 61.4054 | Test : 142.4534 at Epoch   9
+[Epoch:  10 (MSE)] Train: 421.0637 | Valid : 460.9139 | Test : 743.4767
+[Epoch:  10 (MAPE)] Train: 63.1794 | Valid : 60.4580 | Test : 140.9773
+- Best loss (MSE) update!! Train: 421.0637 | Valid : 460.9139 | Test : 743.4767 at Epoch  10
+- Best loss (MAPE) update!! Train: 63.1794 | Valid : 60.4580 | Test : 140.9773 at Epoch  10
+[Epoch:  11 (MSE)] Train: 409.9872 | Valid : 447.8205 | Test : 728.6044
+[Epoch:  11 (MAPE)] Train: 61.9747 | Valid : 59.0027 | Test : 138.7510
+- Best loss (MSE) update!! Train: 409.9872 | Valid : 447.8205 | Test : 728.6044 at Epoch  11
+- Best loss (MAPE) update!! Train: 61.9747 | Valid : 59.0027 | Test : 138.7510 at Epoch  11
+[Epoch:  12 (MSE)] Train: 396.6087 | Valid : 435.7729 | Test : 712.7114
+[Epoch:  12 (MAPE)] Train: 60.4196 | Valid : 58.3704 | Test : 137.4085
+- Best loss (MSE) update!! Train: 396.6087 | Valid : 435.7729 | Test : 712.7114 at Epoch  12
+- Best loss (MAPE) update!! Train: 60.4196 | Valid : 58.3704 | Test : 137.4085 at Epoch  12
+[Epoch:  13 (MSE)] Train: 384.8065 | Valid : 422.0203 | Test : 696.8061
+[Epoch:  13 (MAPE)] Train: 59.2955 | Valid : 56.6618 | Test : 135.1034
+- Best loss (MSE) update!! Train: 384.8065 | Valid : 422.0203 | Test : 696.8061 at Epoch  13
+- Best loss (MAPE) update!! Train: 59.2955 | Valid : 56.6618 | Test : 135.1034 at Epoch  13
+[Epoch:  14 (MSE)] Train: 374.1709 | Valid : 411.3544 | Test : 682.4932
+[Epoch:  14 (MAPE)] Train: 58.2809 | Valid : 55.8251 | Test : 133.8632
+- Best loss (MSE) update!! Train: 374.1709 | Valid : 411.3544 | Test : 682.4932 at Epoch  14
+- Best loss (MAPE) update!! Train: 58.2809 | Valid : 55.8251 | Test : 133.8632 at Epoch  14
+[Epoch:  15 (MSE)] Train: 363.7805 | Valid : 398.3250 | Test : 666.0081
+[Epoch:  15 (MAPE)] Train: 57.2207 | Valid : 54.6641 | Test : 131.8926
+- Best loss (MSE) update!! Train: 363.7805 | Valid : 398.3250 | Test : 666.0081 at Epoch  15
+- Best loss (MAPE) update!! Train: 57.2207 | Valid : 54.6641 | Test : 131.8926 at Epoch  15
+[Epoch:  16 (MSE)] Train: 349.6086 | Valid : 382.8447 | Test : 646.8248
+[Epoch:  16 (MAPE)] Train: 55.5788 | Valid : 53.1044 | Test : 129.4803
+- Best loss (MSE) update!! Train: 349.6086 | Valid : 382.8447 | Test : 646.8248 at Epoch  16
+- Best loss (MAPE) update!! Train: 55.5788 | Valid : 53.1044 | Test : 129.4803 at Epoch  16
+[Epoch:  17 (MSE)] Train: 334.7744 | Valid : 364.4813 | Test : 623.6571
+[Epoch:  17 (MAPE)] Train: 54.0332 | Valid : 51.1311 | Test : 126.3071
+- Best loss (MSE) update!! Train: 334.7744 | Valid : 364.4813 | Test : 623.6571 at Epoch  17
+- Best loss (MAPE) update!! Train: 54.0332 | Valid : 51.1311 | Test : 126.3071 at Epoch  17
+[Epoch:  18 (MSE)] Train: 318.0232 | Valid : 347.2671 | Test : 601.1528
+[Epoch:  18 (MAPE)] Train: 52.0641 | Valid : 49.3915 | Test : 123.4443
+- Best loss (MSE) update!! Train: 318.0232 | Valid : 347.2671 | Test : 601.1528 at Epoch  18
+- Best loss (MAPE) update!! Train: 52.0641 | Valid : 49.3915 | Test : 123.4443 at Epoch  18
+[Epoch:  19 (MSE)] Train: 300.8434 | Valid : 327.8482 | Test : 576.3904
+[Epoch:  19 (MAPE)] Train: 49.9931 | Valid : 47.2282 | Test : 119.7831
+- Best loss (MSE) update!! Train: 300.8434 | Valid : 327.8482 | Test : 576.3904 at Epoch  19
+- Best loss (MAPE) update!! Train: 49.9931 | Valid : 47.2282 | Test : 119.7831 at Epoch  19
+[Epoch:  20 (MSE)] Train: 282.1249 | Valid : 308.7267 | Test : 550.3920
+[Epoch:  20 (MAPE)] Train: 47.6665 | Valid : 45.4968 | Test : 116.9381
+- Best loss (MSE) update!! Train: 282.1249 | Valid : 308.7267 | Test : 550.3920 at Epoch  20
+- Best loss (MAPE) update!! Train: 47.6665 | Valid : 45.4968 | Test : 116.9381 at Epoch  20
+[Epoch:  21 (MSE)] Train: 265.0869 | Valid : 290.9547 | Test : 525.8928
+[Epoch:  21 (MAPE)] Train: 45.7124 | Valid : 43.9967 | Test : 114.7078
+- Best loss (MSE) update!! Train: 265.0869 | Valid : 290.9547 | Test : 525.8928 at Epoch  21
+- Best loss (MAPE) update!! Train: 45.7124 | Valid : 43.9967 | Test : 114.7078 at Epoch  21
+[Epoch:  22 (MSE)] Train: 247.7568 | Valid : 269.0981 | Test : 496.7343
+[Epoch:  22 (MAPE)] Train: 43.2553 | Valid : 40.7052 | Test : 108.7652
+- Best loss (MSE) update!! Train: 247.7568 | Valid : 269.0981 | Test : 496.7343 at Epoch  22
+- Best loss (MAPE) update!! Train: 43.2553 | Valid : 40.7052 | Test : 108.7652 at Epoch  22
+[Epoch:  23 (MSE)] Train: 227.7734 | Valid : 246.5090 | Test : 465.9189
+[Epoch:  23 (MAPE)] Train: 40.2556 | Valid : 37.4718 | Test : 102.8784
+- Best loss (MSE) update!! Train: 227.7734 | Valid : 246.5090 | Test : 465.9189 at Epoch  23
+- Best loss (MAPE) update!! Train: 40.2556 | Valid : 37.4718 | Test : 102.8784 at Epoch  23
+[Epoch:  24 (MSE)] Train: 202.9145 | Valid : 227.0161 | Test : 436.5198
+[Epoch:  24 (MAPE)] Train: 34.3042 | Valid : 32.0924 | Test : 83.2085
+- Best loss (MSE) update!! Train: 202.9145 | Valid : 227.0161 | Test : 436.5198 at Epoch  24
+- Best loss (MAPE) update!! Train: 34.3042 | Valid : 32.0924 | Test : 83.2085 at Epoch  24
+[Epoch:  25 (MSE)] Train: 213.9925 | Valid : 228.4894 | Test : 433.2080
+[Epoch:  25 (MAPE)] Train: 42.4855 | Valid : 37.9458 | Test : 104.4171
+[Epoch:  26 (MSE)] Train: 194.2006 | Valid : 209.7543 | Test : 408.1210
+[Epoch:  26 (MAPE)] Train: 37.8261 | Valid : 34.6633 | Test : 97.8644
+- Best loss (MSE) update!! Train: 194.2006 | Valid : 209.7543 | Test : 408.1210 at Epoch  26
+- Best loss (MAPE) update!! Train: 37.8261 | Valid : 34.6633 | Test : 97.8644 at Epoch  26
+[Epoch:  27 (MSE)] Train: 178.4965 | Valid : 194.2035 | Test : 383.1387
+[Epoch:  27 (MAPE)] Train: 35.0625 | Valid : 33.6176 | Test : 95.8452
+- Best loss (MSE) update!! Train: 178.4965 | Valid : 194.2035 | Test : 383.1387 at Epoch  27
+- Best loss (MAPE) update!! Train: 35.0625 | Valid : 33.6176 | Test : 95.8452 at Epoch  27
+[Epoch:  28 (MSE)] Train: 167.4411 | Valid : 182.8024 | Test : 363.0677
+[Epoch:  28 (MAPE)] Train: 33.7803 | Valid : 32.8718 | Test : 94.2485
+- Best loss (MSE) update!! Train: 167.4411 | Valid : 182.8024 | Test : 363.0677 at Epoch  28
+- Best loss (MAPE) update!! Train: 33.7803 | Valid : 32.8718 | Test : 94.2485 at Epoch  28
+[Epoch:  29 (MSE)] Train: 158.8386 | Valid : 173.5985 | Test : 347.5957
+[Epoch:  29 (MAPE)] Train: 32.7262 | Valid : 31.7110 | Test : 92.0732
+- Best loss (MSE) update!! Train: 158.8386 | Valid : 173.5985 | Test : 347.5957 at Epoch  29
+- Best loss (MAPE) update!! Train: 32.7262 | Valid : 31.7110 | Test : 92.0732 at Epoch  29
+[Epoch:  30 (MSE)] Train: 151.2040 | Valid : 165.4894 | Test : 333.2709
+[Epoch:  30 (MAPE)] Train: 31.7260 | Valid : 30.8939 | Test : 90.3194
+- Best loss (MSE) update!! Train: 151.2040 | Valid : 165.4894 | Test : 333.2709 at Epoch  30
+- Best loss (MAPE) update!! Train: 31.7260 | Valid : 30.8939 | Test : 90.3194 at Epoch  30
+[Epoch:  31 (MSE)] Train: 144.9609 | Valid : 158.1397 | Test : 320.1888
+[Epoch:  31 (MAPE)] Train: 30.8719 | Valid : 30.2344 | Test : 88.7856
+- Best loss (MSE) update!! Train: 144.9609 | Valid : 158.1397 | Test : 320.1888 at Epoch  31
+- Best loss (MAPE) update!! Train: 30.8719 | Valid : 30.2344 | Test : 88.7856 at Epoch  31
+[Epoch:  32 (MSE)] Train: 139.5119 | Valid : 153.0218 | Test : 310.8218
+[Epoch:  32 (MAPE)] Train: 30.1564 | Valid : 29.7810 | Test : 87.4164
+- Best loss (MSE) update!! Train: 139.5119 | Valid : 153.0218 | Test : 310.8218 at Epoch  32
+- Best loss (MAPE) update!! Train: 30.1564 | Valid : 29.7810 | Test : 87.4164 at Epoch  32
+[Epoch:  33 (MSE)] Train: 134.6993 | Valid : 147.2764 | Test : 300.4487
+[Epoch:  33 (MAPE)] Train: 29.3580 | Valid : 29.0731 | Test : 86.1967
+- Best loss (MSE) update!! Train: 134.6993 | Valid : 147.2764 | Test : 300.4487 at Epoch  33
+- Best loss (MAPE) update!! Train: 29.3580 | Valid : 29.0731 | Test : 86.1967 at Epoch  33
+[Epoch:  34 (MSE)] Train: 130.8623 | Valid : 142.8033 | Test : 292.0866
+[Epoch:  34 (MAPE)] Train: 28.7945 | Valid : 28.4036 | Test : 84.5028
+- Best loss (MSE) update!! Train: 130.8623 | Valid : 142.8033 | Test : 292.0866 at Epoch  34
+- Best loss (MAPE) update!! Train: 28.7945 | Valid : 28.4036 | Test : 84.5028 at Epoch  34
+[Epoch:  35 (MSE)] Train: 127.2513 | Valid : 138.8110 | Test : 284.7144
+[Epoch:  35 (MAPE)] Train: 28.1612 | Valid : 27.5735 | Test : 83.0156
+- Best loss (MSE) update!! Train: 127.2513 | Valid : 138.8110 | Test : 284.7144 at Epoch  35
+- Best loss (MAPE) update!! Train: 28.1612 | Valid : 27.5735 | Test : 83.0156 at Epoch  35
+[Epoch:  36 (MSE)] Train: 124.7496 | Valid : 136.5256 | Test : 279.8039
+[Epoch:  36 (MAPE)] Train: 27.8298 | Valid : 27.0500 | Test : 81.5587
+- Best loss (MSE) update!! Train: 124.7496 | Valid : 136.5256 | Test : 279.8039 at Epoch  36
+- Best loss (MAPE) update!! Train: 27.8298 | Valid : 27.0500 | Test : 81.5587 at Epoch  36
+[Epoch:  37 (MSE)] Train: 121.5090 | Valid : 132.7157 | Test : 273.2573
+[Epoch:  37 (MAPE)] Train: 27.2339 | Valid : 26.5895 | Test : 80.7758
+- Best loss (MSE) update!! Train: 121.5090 | Valid : 132.7157 | Test : 273.2573 at Epoch  37
+- Best loss (MAPE) update!! Train: 27.2339 | Valid : 26.5895 | Test : 80.7758 at Epoch  37
+[Epoch:  38 (MSE)] Train: 118.4074 | Valid : 129.6992 | Test : 267.4438
+[Epoch:  38 (MAPE)] Train: 26.5781 | Valid : 26.0432 | Test : 79.5601
+- Best loss (MSE) update!! Train: 118.4074 | Valid : 129.6992 | Test : 267.4438 at Epoch  38
+- Best loss (MAPE) update!! Train: 26.5781 | Valid : 26.0432 | Test : 79.5601 at Epoch  38
+[Epoch:  39 (MSE)] Train: 116.6525 | Valid : 128.0810 | Test : 264.3210
+[Epoch:  39 (MAPE)] Train: 26.1443 | Valid : 25.6258 | Test : 78.5263
+- Best loss (MSE) update!! Train: 116.6525 | Valid : 128.0810 | Test : 264.3210 at Epoch  39
+- Best loss (MAPE) update!! Train: 26.1443 | Valid : 25.6258 | Test : 78.5263 at Epoch  39
+[Epoch:  40 (MSE)] Train: 114.3260 | Valid : 126.1448 | Test : 258.9713
+[Epoch:  40 (MAPE)] Train: 25.9277 | Valid : 25.3051 | Test : 77.5522
+- Best loss (MSE) update!! Train: 114.3260 | Valid : 126.1448 | Test : 258.9713 at Epoch  40
+- Best loss (MAPE) update!! Train: 25.9277 | Valid : 25.3051 | Test : 77.5522 at Epoch  40
+[Epoch:  41 (MSE)] Train: 113.0840 | Valid : 123.6227 | Test : 254.5304
+[Epoch:  41 (MAPE)] Train: 25.6208 | Valid : 25.3664 | Test : 77.4515
+- Best loss (MSE) update!! Train: 113.0840 | Valid : 123.6227 | Test : 254.5304 at Epoch  41
+- Best loss (MAPE) update!! Train: 25.6208 | Valid : 25.3664 | Test : 77.4515 at Epoch  41
+[Epoch:  42 (MSE)] Train: 111.2315 | Valid : 122.0244 | Test : 251.3831
+[Epoch:  42 (MAPE)] Train: 25.2287 | Valid : 25.0046 | Test : 76.4489
+- Best loss (MSE) update!! Train: 111.2315 | Valid : 122.0244 | Test : 251.3831 at Epoch  42
+- Best loss (MAPE) update!! Train: 25.2287 | Valid : 25.0046 | Test : 76.4489 at Epoch  42
+[Epoch:  43 (MSE)] Train: 109.7181 | Valid : 120.5561 | Test : 248.2728
+[Epoch:  43 (MAPE)] Train: 25.0412 | Valid : 24.7788 | Test : 75.8339
+- Best loss (MSE) update!! Train: 109.7181 | Valid : 120.5561 | Test : 248.2728 at Epoch  43
+- Best loss (MAPE) update!! Train: 25.0412 | Valid : 24.7788 | Test : 75.8339 at Epoch  43
+[Epoch:  44 (MSE)] Train: 108.4909 | Valid : 118.3159 | Test : 244.0892
+[Epoch:  44 (MAPE)] Train: 24.7508 | Valid : 24.5820 | Test : 75.3440
+- Best loss (MSE) update!! Train: 108.4909 | Valid : 118.3159 | Test : 244.0892 at Epoch  44
+- Best loss (MAPE) update!! Train: 24.7508 | Valid : 24.5820 | Test : 75.3440 at Epoch  44
+[Epoch:  45 (MSE)] Train: 107.1064 | Valid : 117.1636 | Test : 240.9713
+[Epoch:  45 (MAPE)] Train: 24.4613 | Valid : 24.6331 | Test : 74.4049
+- Best loss (MSE) update!! Train: 107.1064 | Valid : 117.1636 | Test : 240.9713 at Epoch  45
+- Best loss (MAPE) update!! Train: 24.4613 | Valid : 24.6331 | Test : 74.4049 at Epoch  45
+[Epoch:  46 (MSE)] Train: 105.9929 | Valid : 115.4614 | Test : 238.5832
+[Epoch:  46 (MAPE)] Train: 24.2321 | Valid : 24.1100 | Test : 73.7901
+- Best loss (MSE) update!! Train: 105.9929 | Valid : 115.4614 | Test : 238.5832 at Epoch  46
+- Best loss (MAPE) update!! Train: 24.2321 | Valid : 24.1100 | Test : 73.7901 at Epoch  46
+[Epoch:  47 (MSE)] Train: 104.5979 | Valid : 114.3234 | Test : 235.4363
+[Epoch:  47 (MAPE)] Train: 23.7519 | Valid : 24.3264 | Test : 73.3221
+- Best loss (MSE) update!! Train: 104.5979 | Valid : 114.3234 | Test : 235.4363 at Epoch  47
+- Best loss (MAPE) update!! Train: 23.7519 | Valid : 24.3264 | Test : 73.3221 at Epoch  47
+[Epoch:  48 (MSE)] Train: 103.9222 | Valid : 114.7458 | Test : 233.5719
+[Epoch:  48 (MAPE)] Train: 23.6822 | Valid : 25.3730 | Test : 73.4656
+[Epoch:  49 (MSE)] Train: 103.8668 | Valid : 113.3801 | Test : 232.7375
+[Epoch:  49 (MAPE)] Train: 23.8303 | Valid : 23.5211 | Test : 71.9706
+- Best loss (MSE) update!! Train: 103.8668 | Valid : 113.3801 | Test : 232.7375 at Epoch  49
+- Best loss (MAPE) update!! Train: 23.8303 | Valid : 23.5211 | Test : 71.9706 at Epoch  49
+[Epoch:  50 (MSE)] Train: 102.0185 | Valid : 111.3910 | Test : 228.9846
+[Epoch:  50 (MAPE)] Train: 23.1834 | Valid : 24.4534 | Test : 72.3602
+- Best loss (MSE) update!! Train: 102.0185 | Valid : 111.3910 | Test : 228.9846 at Epoch  50
+- Best loss (MAPE) update!! Train: 23.1834 | Valid : 24.4534 | Test : 72.3602 at Epoch  50
+[Epoch:  51 (MSE)] Train: 101.4289 | Valid : 111.0579 | Test : 227.7820
+[Epoch:  51 (MAPE)] Train: 23.2198 | Valid : 24.1527 | Test : 71.5553
+- Best loss (MSE) update!! Train: 101.4289 | Valid : 111.0579 | Test : 227.7820 at Epoch  51
+- Best loss (MAPE) update!! Train: 23.2198 | Valid : 24.1527 | Test : 71.5553 at Epoch  51
+[Epoch:  52 (MSE)] Train: 100.8700 | Valid : 110.0521 | Test : 226.0947
+[Epoch:  52 (MAPE)] Train: 22.9327 | Valid : 24.1751 | Test : 71.3567
+- Best loss (MSE) update!! Train: 100.8700 | Valid : 110.0521 | Test : 226.0947 at Epoch  52
+- Best loss (MAPE) update!! Train: 22.9327 | Valid : 24.1751 | Test : 71.3567 at Epoch  52
+[Epoch:  53 (MSE)] Train: 99.7215 | Valid : 110.5580 | Test : 224.4378
+[Epoch:  53 (MAPE)] Train: 22.8580 | Valid : 24.9507 | Test : 72.0990
+[Epoch:  54 (MSE)] Train: 100.1416 | Valid : 110.2863 | Test : 225.5179
+[Epoch:  54 (MAPE)] Train: 23.0817 | Valid : 22.4826 | Test : 68.9895
+[Epoch:  55 (MSE)] Train: 99.1096 | Valid : 107.8901 | Test : 222.6021
+[Epoch:  55 (MAPE)] Train: 22.5857 | Valid : 23.0812 | Test : 69.6627
+- Best loss (MSE) update!! Train: 99.1096 | Valid : 107.8901 | Test : 222.6021 at Epoch  55
+- Best loss (MAPE) update!! Train: 22.5857 | Valid : 23.0812 | Test : 69.6627 at Epoch  55
+[Epoch:  56 (MSE)] Train: 98.4060 | Valid : 107.4501 | Test : 222.0185
+[Epoch:  56 (MAPE)] Train: 22.5085 | Valid : 22.8975 | Test : 69.1970
+- Best loss (MSE) update!! Train: 98.4060 | Valid : 107.4501 | Test : 222.0185 at Epoch  56
+- Best loss (MAPE) update!! Train: 22.5085 | Valid : 22.8975 | Test : 69.1970 at Epoch  56
+[Epoch:  57 (MSE)] Train: 97.9839 | Valid : 107.7993 | Test : 220.1624
+[Epoch:  57 (MAPE)] Train: 22.4559 | Valid : 23.0946 | Test : 68.9375
+[Epoch:  58 (MSE)] Train: 97.7501 | Valid : 106.1234 | Test : 218.8461
+[Epoch:  58 (MAPE)] Train: 22.2901 | Valid : 22.1621 | Test : 67.9282
+- Best loss (MSE) update!! Train: 97.7501 | Valid : 106.1234 | Test : 218.8461 at Epoch  58
+- Best loss (MAPE) update!! Train: 22.2901 | Valid : 22.1621 | Test : 67.9282 at Epoch  58
+[Epoch:  59 (MSE)] Train: 96.9769 | Valid : 108.0526 | Test : 218.3674
+[Epoch:  59 (MAPE)] Train: 22.1447 | Valid : 24.7882 | Test : 69.6432
+[Epoch:  60 (MSE)] Train: 97.5778 | Valid : 106.6444 | Test : 218.2730
+[Epoch:  60 (MAPE)] Train: 22.4273 | Valid : 22.4068 | Test : 67.2127
+[Epoch:  61 (MSE)] Train: 96.3937 | Valid : 105.2281 | Test : 216.6059
+[Epoch:  61 (MAPE)] Train: 22.0091 | Valid : 22.5823 | Test : 67.6018
+- Best loss (MSE) update!! Train: 96.3937 | Valid : 105.2281 | Test : 216.6059 at Epoch  61
+- Best loss (MAPE) update!! Train: 22.0091 | Valid : 22.5823 | Test : 67.6018 at Epoch  61
+[Epoch:  62 (MSE)] Train: 96.0242 | Valid : 105.6894 | Test : 216.2116
+[Epoch:  62 (MAPE)] Train: 21.9655 | Valid : 22.2572 | Test : 66.8570
+[Epoch:  63 (MSE)] Train: 96.0116 | Valid : 104.8613 | Test : 214.7422
+[Epoch:  63 (MAPE)] Train: 21.8649 | Valid : 22.8230 | Test : 67.1752
+- Best loss (MSE) update!! Train: 96.0116 | Valid : 104.8613 | Test : 214.7422 at Epoch  63
+- Best loss (MAPE) update!! Train: 21.8649 | Valid : 22.8230 | Test : 67.1752 at Epoch  63
+[Epoch:  64 (MSE)] Train: 95.5079 | Valid : 104.5351 | Test : 214.0421
+[Epoch:  64 (MAPE)] Train: 21.8943 | Valid : 21.9465 | Test : 66.3170
+- Best loss (MSE) update!! Train: 95.5079 | Valid : 104.5351 | Test : 214.0421 at Epoch  64
+- Best loss (MAPE) update!! Train: 21.8943 | Valid : 21.9465 | Test : 66.3170 at Epoch  64
+[Epoch:  65 (MSE)] Train: 94.8173 | Valid : 104.4578 | Test : 214.4207
+[Epoch:  65 (MAPE)] Train: 21.6766 | Valid : 22.4209 | Test : 66.6015
+- Best loss (MSE) update!! Train: 94.8173 | Valid : 104.4578 | Test : 214.4207 at Epoch  65
+- Best loss (MAPE) update!! Train: 21.6766 | Valid : 22.4209 | Test : 66.6015 at Epoch  65
+[Epoch:  66 (MSE)] Train: 94.4684 | Valid : 103.4422 | Test : 211.3954
+[Epoch:  66 (MAPE)] Train: 21.5721 | Valid : 22.4909 | Test : 66.0428
+- Best loss (MSE) update!! Train: 94.4684 | Valid : 103.4422 | Test : 211.3954 at Epoch  66
+- Best loss (MAPE) update!! Train: 21.5721 | Valid : 22.4909 | Test : 66.0428 at Epoch  66
+[Epoch:  67 (MSE)] Train: 94.4277 | Valid : 103.1493 | Test : 211.2139
+[Epoch:  67 (MAPE)] Train: 21.3956 | Valid : 22.6826 | Test : 66.0473
+- Best loss (MSE) update!! Train: 94.4277 | Valid : 103.1493 | Test : 211.2139 at Epoch  67
+- Best loss (MAPE) update!! Train: 21.3956 | Valid : 22.6826 | Test : 66.0473 at Epoch  67
+[Epoch:  68 (MSE)] Train: 94.2245 | Valid : 103.1226 | Test : 210.6889
+[Epoch:  68 (MAPE)] Train: 21.4632 | Valid : 21.8872 | Test : 65.2660
+- Best loss (MSE) update!! Train: 94.2245 | Valid : 103.1226 | Test : 210.6889 at Epoch  68
+- Best loss (MAPE) update!! Train: 21.4632 | Valid : 21.8872 | Test : 65.2660 at Epoch  68
+[Epoch:  69 (MSE)] Train: 93.8148 | Valid : 102.2771 | Test : 209.8832
+[Epoch:  69 (MAPE)] Train: 21.3143 | Valid : 22.1600 | Test : 65.4960
+- Best loss (MSE) update!! Train: 93.8148 | Valid : 102.2771 | Test : 209.8832 at Epoch  69
+- Best loss (MAPE) update!! Train: 21.3143 | Valid : 22.1600 | Test : 65.4960 at Epoch  69
+[Epoch:  70 (MSE)] Train: 94.0388 | Valid : 102.6454 | Test : 210.6952
+[Epoch:  70 (MAPE)] Train: 21.2861 | Valid : 21.8184 | Test : 64.3650
+[Epoch:  71 (MSE)] Train: 93.7532 | Valid : 102.4579 | Test : 209.5384
+[Epoch:  71 (MAPE)] Train: 21.2553 | Valid : 22.1209 | Test : 64.5437
+[Epoch:  72 (MSE)] Train: 93.3635 | Valid : 102.4413 | Test : 209.0747
+[Epoch:  72 (MAPE)] Train: 21.1077 | Valid : 21.5988 | Test : 63.9519
+[Epoch:  73 (MSE)] Train: 93.0695 | Valid : 102.3792 | Test : 207.9154
+[Epoch:  73 (MAPE)] Train: 20.9896 | Valid : 21.5369 | Test : 63.6512
+[Epoch:  74 (MSE)] Train: 93.0186 | Valid : 101.5007 | Test : 206.5737
+[Epoch:  74 (MAPE)] Train: 20.8732 | Valid : 21.8046 | Test : 63.1683
+- Best loss (MSE) update!! Train: 93.0186 | Valid : 101.5007 | Test : 206.5737 at Epoch  74
+- Best loss (MAPE) update!! Train: 20.8732 | Valid : 21.8046 | Test : 63.1683 at Epoch  74
+[Epoch:  75 (MSE)] Train: 92.9501 | Valid : 101.7155 | Test : 206.9948
+[Epoch:  75 (MAPE)] Train: 21.0181 | Valid : 21.0927 | Test : 62.8471
+[Epoch:  76 (MSE)] Train: 92.8386 | Valid : 101.2000 | Test : 206.9101
+[Epoch:  76 (MAPE)] Train: 20.9630 | Valid : 21.2703 | Test : 63.0136
+- Best loss (MSE) update!! Train: 92.8386 | Valid : 101.2000 | Test : 206.9101 at Epoch  76
+- Best loss (MAPE) update!! Train: 20.9630 | Valid : 21.2703 | Test : 63.0136 at Epoch  76
+[Epoch:  77 (MSE)] Train: 92.9002 | Valid : 101.8272 | Test : 206.3067
+[Epoch:  77 (MAPE)] Train: 20.9812 | Valid : 21.2385 | Test : 62.8196
+[Epoch:  78 (MSE)] Train: 92.7693 | Valid : 102.4402 | Test : 207.2146
+[Epoch:  78 (MAPE)] Train: 20.8477 | Valid : 21.2000 | Test : 62.3305
+[Epoch:  79 (MSE)] Train: 92.7586 | Valid : 101.9844 | Test : 206.5685
+[Epoch:  79 (MAPE)] Train: 21.0608 | Valid : 20.9546 | Test : 62.1892
+[Epoch:  80 (MSE)] Train: 92.6917 | Valid : 101.4086 | Test : 205.7895
+[Epoch:  80 (MAPE)] Train: 21.0196 | Valid : 21.0618 | Test : 61.8279
+[Epoch:  81 (MSE)] Train: 92.3438 | Valid : 101.6670 | Test : 205.9911
+[Epoch:  81 (MAPE)] Train: 20.9486 | Valid : 21.0096 | Test : 61.2661
+[Epoch:  82 (MSE)] Train: 92.4552 | Valid : 100.4450 | Test : 204.1049
+[Epoch:  82 (MAPE)] Train: 20.7757 | Valid : 20.9978 | Test : 61.2101
+- Best loss (MSE) update!! Train: 92.4552 | Valid : 100.4450 | Test : 204.1049 at Epoch  82
+- Best loss (MAPE) update!! Train: 20.7757 | Valid : 20.9978 | Test : 61.2101 at Epoch  82
+[Epoch:  83 (MSE)] Train: 92.3652 | Valid : 100.4380 | Test : 204.0051
+[Epoch:  83 (MAPE)] Train: 20.5640 | Valid : 21.4174 | Test : 61.6772
+- Best loss (MSE) update!! Train: 92.3652 | Valid : 100.4380 | Test : 204.0051 at Epoch  83
+- Best loss (MAPE) update!! Train: 20.5640 | Valid : 21.4174 | Test : 61.6772 at Epoch  83
+[Epoch:  84 (MSE)] Train: 91.9578 | Valid : 100.6636 | Test : 204.4027
+[Epoch:  84 (MAPE)] Train: 20.6597 | Valid : 20.7849 | Test : 61.0791
+[Epoch:  85 (MSE)] Train: 91.8506 | Valid : 100.5537 | Test : 203.0915
+[Epoch:  85 (MAPE)] Train: 20.6097 | Valid : 20.7414 | Test : 60.6402
+[Epoch:  86 (MSE)] Train: 91.9730 | Valid : 101.1362 | Test : 204.3186
+[Epoch:  86 (MAPE)] Train: 20.5859 | Valid : 20.7364 | Test : 60.6102
+[Epoch:  87 (MSE)] Train: 91.9751 | Valid : 100.9278 | Test : 204.1445
+[Epoch:  87 (MAPE)] Train: 20.6026 | Valid : 21.0030 | Test : 60.5035
+[Epoch:  88 (MSE)] Train: 92.1938 | Valid : 100.1772 | Test : 202.8790
+[Epoch:  88 (MAPE)] Train: 20.7808 | Valid : 20.7160 | Test : 60.4542
+- Best loss (MSE) update!! Train: 92.1938 | Valid : 100.1772 | Test : 202.8790 at Epoch  88
+- Best loss (MAPE) update!! Train: 20.7808 | Valid : 20.7160 | Test : 60.4542 at Epoch  88
+[Epoch:  89 (MSE)] Train: 91.9223 | Valid : 99.9361 | Test : 202.0475
+[Epoch:  89 (MAPE)] Train: 20.6383 | Valid : 21.1553 | Test : 60.9852
+- Best loss (MSE) update!! Train: 91.9223 | Valid : 99.9361 | Test : 202.0475 at Epoch  89
+- Best loss (MAPE) update!! Train: 20.6383 | Valid : 21.1553 | Test : 60.9852 at Epoch  89
+[Epoch:  90 (MSE)] Train: 92.0678 | Valid : 99.9937 | Test : 202.5007
+[Epoch:  90 (MAPE)] Train: 20.5608 | Valid : 20.7837 | Test : 60.1235
+[Epoch:  91 (MSE)] Train: 91.6718 | Valid : 100.1609 | Test : 201.7699
+[Epoch:  91 (MAPE)] Train: 20.4737 | Valid : 20.9840 | Test : 60.5923
+[Epoch:  92 (MSE)] Train: 91.5292 | Valid : 101.1600 | Test : 203.2610
+[Epoch:  92 (MAPE)] Train: 20.4567 | Valid : 20.5191 | Test : 59.8636
+[Epoch:  93 (MSE)] Train: 91.8263 | Valid : 100.0429 | Test : 201.5908
+[Epoch:  93 (MAPE)] Train: 20.4410 | Valid : 21.3223 | Test : 61.0369
+[Epoch:  94 (MSE)] Train: 91.5094 | Valid : 100.2959 | Test : 202.6286
+[Epoch:  94 (MAPE)] Train: 20.6009 | Valid : 20.4815 | Test : 59.5251
+[Epoch:  95 (MSE)] Train: 91.4227 | Valid : 99.5670 | Test : 201.5198
+[Epoch:  95 (MAPE)] Train: 20.5677 | Valid : 20.8585 | Test : 59.7998
+- Best loss (MSE) update!! Train: 91.4227 | Valid : 99.5670 | Test : 201.5198 at Epoch  95
+- Best loss (MAPE) update!! Train: 20.5677 | Valid : 20.8585 | Test : 59.7998 at Epoch  95
+[Epoch:  96 (MSE)] Train: 91.3705 | Valid : 99.3853 | Test : 200.6613
+[Epoch:  96 (MAPE)] Train: 20.5992 | Valid : 20.5600 | Test : 59.2108
+- Best loss (MSE) update!! Train: 91.3705 | Valid : 99.3853 | Test : 200.6613 at Epoch  96
+- Best loss (MAPE) update!! Train: 20.5992 | Valid : 20.5600 | Test : 59.2108 at Epoch  96
+[Epoch:  97 (MSE)] Train: 91.5339 | Valid : 100.6987 | Test : 202.4434
+[Epoch:  97 (MAPE)] Train: 20.4815 | Valid : 20.7787 | Test : 59.8377
+[Epoch:  98 (MSE)] Train: 91.4777 | Valid : 99.5459 | Test : 201.1798
+[Epoch:  98 (MAPE)] Train: 20.4928 | Valid : 20.5582 | Test : 58.6688
+[Epoch:  99 (MSE)] Train: 91.0638 | Valid : 100.0689 | Test : 201.3842
+[Epoch:  99 (MAPE)] Train: 20.2425 | Valid : 20.3849 | Test : 57.9414
+[Epoch: 100 (MSE)] Train: 90.9160 | Valid : 99.5279 | Test : 201.4172
+[Epoch: 100 (MAPE)] Train: 20.2992 | Valid : 20.3270 | Test : 58.0673
+[Epoch: 101 (MSE)] Train: 91.0051 | Valid : 99.0633 | Test : 200.0776
+[Epoch: 101 (MAPE)] Train: 20.0871 | Valid : 20.6437 | Test : 58.3906
+- Best loss (MSE) update!! Train: 91.0051 | Valid : 99.0633 | Test : 200.0776 at Epoch 101
+- Best loss (MAPE) update!! Train: 20.0871 | Valid : 20.6437 | Test : 58.3906 at Epoch 101
+[Epoch: 102 (MSE)] Train: 91.0260 | Valid : 99.2831 | Test : 199.9978
+[Epoch: 102 (MAPE)] Train: 20.1947 | Valid : 20.5420 | Test : 58.4225
+[Epoch: 103 (MSE)] Train: 91.5486 | Valid : 100.1349 | Test : 201.1981
+[Epoch: 103 (MAPE)] Train: 20.2562 | Valid : 20.1908 | Test : 57.0549
+[Epoch: 104 (MSE)] Train: 91.4769 | Valid : 99.9479 | Test : 200.1174
+[Epoch: 104 (MAPE)] Train: 20.3861 | Valid : 20.3898 | Test : 57.8761
+[Epoch: 105 (MSE)] Train: 91.3050 | Valid : 100.2124 | Test : 201.5213
+[Epoch: 105 (MAPE)] Train: 20.3366 | Valid : 20.5342 | Test : 57.9075
+[Epoch: 106 (MSE)] Train: 91.2226 | Valid : 98.9483 | Test : 199.8756
+[Epoch: 106 (MAPE)] Train: 20.1650 | Valid : 20.3141 | Test : 57.0597
+- Best loss (MSE) update!! Train: 91.2226 | Valid : 98.9483 | Test : 199.8756 at Epoch 106
+- Best loss (MAPE) update!! Train: 20.1650 | Valid : 20.3141 | Test : 57.0597 at Epoch 106
+[Epoch: 107 (MSE)] Train: 91.0379 | Valid : 99.3466 | Test : 200.1786
+[Epoch: 107 (MAPE)] Train: 20.1093 | Valid : 20.0281 | Test : 56.1651
+[Epoch: 108 (MSE)] Train: 90.8081 | Valid : 100.0715 | Test : 201.5601
+[Epoch: 108 (MAPE)] Train: 19.9953 | Valid : 19.8333 | Test : 55.3824
+[Epoch: 109 (MSE)] Train: 91.0815 | Valid : 99.7175 | Test : 200.2825
+[Epoch: 109 (MAPE)] Train: 20.0325 | Valid : 20.2760 | Test : 56.0635
+[Epoch: 110 (MSE)] Train: 90.9674 | Valid : 98.8025 | Test : 199.1440
+[Epoch: 110 (MAPE)] Train: 20.0565 | Valid : 20.5192 | Test : 56.1857
+- Best loss (MSE) update!! Train: 90.9674 | Valid : 98.8025 | Test : 199.1440 at Epoch 110
+- Best loss (MAPE) update!! Train: 20.0565 | Valid : 20.5192 | Test : 56.1857 at Epoch 110
+[Epoch: 111 (MSE)] Train: 90.8310 | Valid : 100.7172 | Test : 201.0323
+[Epoch: 111 (MAPE)] Train: 19.9182 | Valid : 20.4258 | Test : 56.0126
+[Epoch: 112 (MSE)] Train: 90.9921 | Valid : 99.6237 | Test : 200.7532
+[Epoch: 112 (MAPE)] Train: 20.0148 | Valid : 20.2269 | Test : 56.2830
+[Epoch: 113 (MSE)] Train: 90.7097 | Valid : 99.1521 | Test : 198.6787
+[Epoch: 113 (MAPE)] Train: 19.9305 | Valid : 20.1474 | Test : 56.1336
+[Epoch: 114 (MSE)] Train: 90.6487 | Valid : 100.0712 | Test : 200.3292
+[Epoch: 114 (MAPE)] Train: 19.8566 | Valid : 19.8008 | Test : 55.4783
+[Epoch: 115 (MSE)] Train: 90.6942 | Valid : 99.5249 | Test : 199.4538
+[Epoch: 115 (MAPE)] Train: 19.8013 | Valid : 20.0859 | Test : 55.6560
+[Epoch: 116 (MSE)] Train: 90.6644 | Valid : 99.5289 | Test : 199.7940
+[Epoch: 116 (MAPE)] Train: 19.9353 | Valid : 19.9680 | Test : 55.9596
+[Epoch: 117 (MSE)] Train: 90.8778 | Valid : 98.5924 | Test : 197.9252
+[Epoch: 117 (MAPE)] Train: 19.9607 | Valid : 20.6547 | Test : 56.9504
+- Best loss (MSE) update!! Train: 90.8778 | Valid : 98.5924 | Test : 197.9252 at Epoch 117
+- Best loss (MAPE) update!! Train: 19.9607 | Valid : 20.6547 | Test : 56.9504 at Epoch 117
+[Epoch: 118 (MSE)] Train: 90.7963 | Valid : 99.9541 | Test : 200.3605
+[Epoch: 118 (MAPE)] Train: 20.0982 | Valid : 20.7035 | Test : 57.5711
+[Epoch: 119 (MSE)] Train: 91.0405 | Valid : 98.8474 | Test : 200.2659
+[Epoch: 119 (MAPE)] Train: 20.0450 | Valid : 19.7214 | Test : 55.0596
+[Epoch: 120 (MSE)] Train: 90.8593 | Valid : 99.3820 | Test : 199.1109
+[Epoch: 120 (MAPE)] Train: 19.9294 | Valid : 20.2022 | Test : 55.6497
+[Epoch: 121 (MSE)] Train: 90.3018 | Valid : 99.8796 | Test : 199.3502
+[Epoch: 121 (MAPE)] Train: 19.8112 | Valid : 20.2213 | Test : 55.7873
+[Epoch: 122 (MSE)] Train: 91.1144 | Valid : 99.7321 | Test : 199.6491
+[Epoch: 122 (MAPE)] Train: 20.0452 | Valid : 20.2283 | Test : 56.4217
+[Epoch: 123 (MSE)] Train: 90.6283 | Valid : 99.1216 | Test : 199.3609
+[Epoch: 123 (MAPE)] Train: 19.9554 | Valid : 20.5250 | Test : 56.9126
+[Epoch: 124 (MSE)] Train: 91.0670 | Valid : 100.2190 | Test : 200.1517
+[Epoch: 124 (MAPE)] Train: 20.2086 | Valid : 20.3548 | Test : 55.9016
+[Epoch: 125 (MSE)] Train: 90.8068 | Valid : 99.7541 | Test : 199.1119
+[Epoch: 125 (MAPE)] Train: 20.1769 | Valid : 21.1142 | Test : 58.5113
+[Epoch: 126 (MSE)] Train: 91.2815 | Valid : 100.4247 | Test : 200.3969
+[Epoch: 126 (MAPE)] Train: 20.0888 | Valid : 20.9793 | Test : 56.8757
+[Epoch: 127 (MSE)] Train: 91.0516 | Valid : 100.2570 | Test : 199.6829
+[Epoch: 127 (MAPE)] Train: 20.4380 | Valid : 21.1012 | Test : 58.6050
+[Epoch: 128 (MSE)] Train: 90.9544 | Valid : 99.0341 | Test : 200.0549
+[Epoch: 128 (MAPE)] Train: 20.2263 | Valid : 20.3266 | Test : 56.0820
+[Epoch: 129 (MSE)] Train: 90.5077 | Valid : 98.7883 | Test : 197.9006
+[Epoch: 129 (MAPE)] Train: 20.0863 | Valid : 20.1538 | Test : 55.4359
+[Epoch: 130 (MSE)] Train: 90.2689 | Valid : 98.6334 | Test : 199.7307
+[Epoch: 130 (MAPE)] Train: 19.6593 | Valid : 19.9589 | Test : 55.0543
+[Epoch: 131 (MSE)] Train: 90.2222 | Valid : 99.0473 | Test : 198.6161
+[Epoch: 131 (MAPE)] Train: 19.7237 | Valid : 20.0851 | Test : 55.5148
+[Epoch: 132 (MSE)] Train: 90.3151 | Valid : 98.5755 | Test : 198.6115
+[Epoch: 132 (MAPE)] Train: 19.7884 | Valid : 20.6323 | Test : 55.6822
+- Best loss (MSE) update!! Train: 90.3151 | Valid : 98.5755 | Test : 198.6115 at Epoch 132
+- Best loss (MAPE) update!! Train: 19.7884 | Valid : 20.6323 | Test : 55.6822 at Epoch 132
+[Epoch: 133 (MSE)] Train: 90.0266 | Valid : 98.8081 | Test : 197.9544
+[Epoch: 133 (MAPE)] Train: 19.6595 | Valid : 20.1573 | Test : 55.3515
+[Epoch: 134 (MSE)] Train: 90.0793 | Valid : 98.8621 | Test : 199.6235
+[Epoch: 134 (MAPE)] Train: 19.7928 | Valid : 19.7750 | Test : 54.4057
+[Epoch: 135 (MSE)] Train: 90.2461 | Valid : 98.5022 | Test : 197.7652
+[Epoch: 135 (MAPE)] Train: 19.6418 | Valid : 19.9566 | Test : 53.9898
+- Best loss (MSE) update!! Train: 90.2461 | Valid : 98.5022 | Test : 197.7652 at Epoch 135
+- Best loss (MAPE) update!! Train: 19.6418 | Valid : 19.9566 | Test : 53.9898 at Epoch 135
+[Epoch: 136 (MSE)] Train: 90.4478 | Valid : 99.1253 | Test : 200.3172
+[Epoch: 136 (MAPE)] Train: 19.5541 | Valid : 19.6121 | Test : 52.8851
+[Epoch: 137 (MSE)] Train: 89.9379 | Valid : 98.7135 | Test : 199.8444
+[Epoch: 137 (MAPE)] Train: 19.5728 | Valid : 20.1071 | Test : 54.3392
+[Epoch: 138 (MSE)] Train: 89.8789 | Valid : 98.7828 | Test : 199.0550
+[Epoch: 138 (MAPE)] Train: 19.7297 | Valid : 20.0720 | Test : 55.0694
+[Epoch: 139 (MSE)] Train: 90.4156 | Valid : 99.3499 | Test : 200.0381
+[Epoch: 139 (MAPE)] Train: 20.1601 | Valid : 20.4736 | Test : 56.6828
+[Epoch: 140 (MSE)] Train: 91.0630 | Valid : 99.8773 | Test : 200.0960
+[Epoch: 140 (MAPE)] Train: 20.0987 | Valid : 20.3274 | Test : 55.0810
+[Epoch: 141 (MSE)] Train: 90.6137 | Valid : 98.5182 | Test : 198.4425
+[Epoch: 141 (MAPE)] Train: 20.1920 | Valid : 20.6441 | Test : 56.2944
+[Epoch: 142 (MSE)] Train: 89.9862 | Valid : 98.1578 | Test : 198.4108
+[Epoch: 142 (MAPE)] Train: 19.8375 | Valid : 20.0632 | Test : 55.1556
+- Best loss (MSE) update!! Train: 89.9862 | Valid : 98.1578 | Test : 198.4108 at Epoch 142
+- Best loss (MAPE) update!! Train: 19.8375 | Valid : 20.0632 | Test : 55.1556 at Epoch 142
+[Epoch: 143 (MSE)] Train: 89.8544 | Valid : 98.5044 | Test : 198.1881
+[Epoch: 143 (MAPE)] Train: 19.7129 | Valid : 19.9914 | Test : 54.3904
+[Epoch: 144 (MSE)] Train: 90.2149 | Valid : 98.6027 | Test : 197.9756
+[Epoch: 144 (MAPE)] Train: 19.7899 | Valid : 19.6801 | Test : 53.5432
+[Epoch: 145 (MSE)] Train: 90.0991 | Valid : 98.3791 | Test : 198.2504
+[Epoch: 145 (MAPE)] Train: 19.7133 | Valid : 20.0953 | Test : 54.5851
+[Epoch: 146 (MSE)] Train: 89.9886 | Valid : 98.7780 | Test : 199.1597
+[Epoch: 146 (MAPE)] Train: 19.7061 | Valid : 19.8961 | Test : 53.4494
+[Epoch: 147 (MSE)] Train: 90.1160 | Valid : 98.8776 | Test : 198.4323
+[Epoch: 147 (MAPE)] Train: 19.8105 | Valid : 19.9129 | Test : 52.5856
+[Epoch: 148 (MSE)] Train: 90.0891 | Valid : 97.9403 | Test : 197.2852
+[Epoch: 148 (MAPE)] Train: 19.7148 | Valid : 20.1334 | Test : 53.6445
+- Best loss (MSE) update!! Train: 90.0891 | Valid : 97.9403 | Test : 197.2852 at Epoch 148
+- Best loss (MAPE) update!! Train: 19.7148 | Valid : 20.1334 | Test : 53.6445 at Epoch 148
+[Epoch: 149 (MSE)] Train: 90.0240 | Valid : 99.7447 | Test : 199.9671
+[Epoch: 149 (MAPE)] Train: 19.6434 | Valid : 20.2610 | Test : 53.1605
+[Epoch: 150 (MSE)] Train: 90.4429 | Valid : 98.6095 | Test : 197.6668
+[Epoch: 150 (MAPE)] Train: 19.6770 | Valid : 20.0183 | Test : 52.2303
+[Epoch: 151 (MSE)] Train: 89.7210 | Valid : 98.7904 | Test : 199.3584
+[Epoch: 151 (MAPE)] Train: 19.5704 | Valid : 20.4907 | Test : 54.7837
+[Epoch: 152 (MSE)] Train: 90.0554 | Valid : 98.0883 | Test : 196.8309
+[Epoch: 152 (MAPE)] Train: 19.6796 | Valid : 20.0951 | Test : 54.2828
+[Epoch: 153 (MSE)] Train: 89.9565 | Valid : 98.5552 | Test : 198.5346
+[Epoch: 153 (MAPE)] Train: 19.6625 | Valid : 19.7265 | Test : 53.8607
+[Epoch: 154 (MSE)] Train: 90.5257 | Valid : 98.9509 | Test : 198.1905
+[Epoch: 154 (MAPE)] Train: 19.8617 | Valid : 20.4518 | Test : 55.6504
+[Epoch: 155 (MSE)] Train: 90.6614 | Valid : 98.6074 | Test : 197.4613
+[Epoch: 155 (MAPE)] Train: 19.9882 | Valid : 20.7029 | Test : 54.9573
+[Epoch: 156 (MSE)] Train: 90.1970 | Valid : 99.2551 | Test : 198.2484
+[Epoch: 156 (MAPE)] Train: 19.7503 | Valid : 20.4096 | Test : 53.7625
+[Epoch: 157 (MSE)] Train: 89.8726 | Valid : 98.3345 | Test : 197.0339
+[Epoch: 157 (MAPE)] Train: 19.6739 | Valid : 19.5439 | Test : 52.1676
+[Epoch: 158 (MSE)] Train: 89.3042 | Valid : 98.3471 | Test : 197.2753
+[Epoch: 158 (MAPE)] Train: 19.5581 | Valid : 19.7329 | Test : 52.7565
+[Epoch: 159 (MSE)] Train: 89.6184 | Valid : 98.5594 | Test : 198.3895
+[Epoch: 159 (MAPE)] Train: 19.5406 | Valid : 19.7269 | Test : 52.7807
+[Epoch: 160 (MSE)] Train: 90.1994 | Valid : 98.8177 | Test : 197.9509
+[Epoch: 160 (MAPE)] Train: 19.7818 | Valid : 20.2644 | Test : 54.9762
+[Epoch: 161 (MSE)] Train: 90.0785 | Valid : 99.4059 | Test : 200.2720
+[Epoch: 161 (MAPE)] Train: 20.0415 | Valid : 20.0170 | Test : 54.8919
+[Epoch: 162 (MSE)] Train: 89.9894 | Valid : 98.4691 | Test : 197.0658
+[Epoch: 162 (MAPE)] Train: 19.8832 | Valid : 20.3798 | Test : 55.4119
+[Epoch: 163 (MSE)] Train: 90.2448 | Valid : 98.6418 | Test : 197.9297
+[Epoch: 163 (MAPE)] Train: 19.8409 | Valid : 19.6577 | Test : 52.4128
+[Epoch: 164 (MSE)] Train: 89.7765 | Valid : 99.4764 | Test : 198.9332
+[Epoch: 164 (MAPE)] Train: 19.5509 | Valid : 19.7662 | Test : 52.2037
+[Epoch: 165 (MSE)] Train: 89.4628 | Valid : 98.7049 | Test : 198.3244
+[Epoch: 165 (MAPE)] Train: 19.4703 | Valid : 19.7350 | Test : 51.5266
+[Epoch: 166 (MSE)] Train: 89.3593 | Valid : 98.7101 | Test : 197.1067
+[Epoch: 166 (MAPE)] Train: 19.4109 | Valid : 19.7097 | Test : 52.5519
+[Epoch: 167 (MSE)] Train: 89.4636 | Valid : 99.0093 | Test : 198.7834
+[Epoch: 167 (MAPE)] Train: 19.6515 | Valid : 20.3875 | Test : 55.3036
+[Epoch: 168 (MSE)] Train: 89.7228 | Valid : 98.4375 | Test : 197.5287
+[Epoch: 168 (MAPE)] Train: 19.6498 | Valid : 19.9261 | Test : 53.8429
+[Epoch: 169 (MSE)] Train: 90.0323 | Valid : 99.4872 | Test : 198.8249
+[Epoch: 169 (MAPE)] Train: 19.6692 | Valid : 19.9324 | Test : 51.9667
+[Epoch: 170 (MSE)] Train: 89.9546 | Valid : 98.3062 | Test : 197.0271
+[Epoch: 170 (MAPE)] Train: 19.7637 | Valid : 19.8188 | Test : 52.0641
+[Epoch: 171 (MSE)] Train: 89.3223 | Valid : 98.5545 | Test : 197.1697
+[Epoch: 171 (MAPE)] Train: 19.3691 | Valid : 20.2145 | Test : 52.4479
+[Epoch: 172 (MSE)] Train: 89.2538 | Valid : 98.9921 | Test : 197.8242
+[Epoch: 172 (MAPE)] Train: 19.5364 | Valid : 19.9831 | Test : 50.6178
+[Epoch: 173 (MSE)] Train: 89.4311 | Valid : 98.3934 | Test : 196.8100
+[Epoch: 173 (MAPE)] Train: 19.3005 | Valid : 19.6144 | Test : 49.7523
+[Epoch: 174 (MSE)] Train: 89.5375 | Valid : 98.9538 | Test : 199.1257
+[Epoch: 174 (MAPE)] Train: 19.2884 | Valid : 19.1472 | Test : 49.0328
+[Epoch: 175 (MSE)] Train: 89.9949 | Valid : 98.7389 | Test : 197.4450
+[Epoch: 175 (MAPE)] Train: 19.2084 | Valid : 19.3353 | Test : 48.1609
+[Epoch: 176 (MSE)] Train: 90.4045 | Valid : 99.3376 | Test : 196.9201
+[Epoch: 176 (MAPE)] Train: 19.6054 | Valid : 19.9185 | Test : 50.7632
+[Epoch: 177 (MSE)] Train: 89.7409 | Valid : 99.3781 | Test : 196.3526
+[Epoch: 177 (MAPE)] Train: 19.3485 | Valid : 20.2167 | Test : 51.9026
+[Epoch: 178 (MSE)] Train: 89.4895 | Valid : 99.1153 | Test : 196.5991
+[Epoch: 178 (MAPE)] Train: 19.2980 | Valid : 19.7428 | Test : 50.2431
+[Epoch: 179 (MSE)] Train: 89.3934 | Valid : 98.5029 | Test : 195.8960
+[Epoch: 179 (MAPE)] Train: 19.4499 | Valid : 20.0362 | Test : 50.8299
+[Epoch: 180 (MSE)] Train: 89.4810 | Valid : 98.4605 | Test : 195.8700
+[Epoch: 180 (MAPE)] Train: 19.2737 | Valid : 20.0820 | Test : 50.2043
+[Epoch: 181 (MSE)] Train: 89.6062 | Valid : 99.4390 | Test : 196.5780
+[Epoch: 181 (MAPE)] Train: 19.5705 | Valid : 20.4400 | Test : 51.1377
+[Epoch: 182 (MSE)] Train: 89.8828 | Valid : 98.4864 | Test : 197.1461
+[Epoch: 182 (MAPE)] Train: 19.8377 | Valid : 20.1670 | Test : 51.8015
+[Epoch: 183 (MSE)] Train: 90.0551 | Valid : 100.5095 | Test : 198.5960
+[Epoch: 183 (MAPE)] Train: 19.3496 | Valid : 19.5828 | Test : 47.7593
+[Epoch: 184 (MSE)] Train: 90.4819 | Valid : 99.0135 | Test : 198.3923
+[Epoch: 184 (MAPE)] Train: 19.5684 | Valid : 19.5486 | Test : 49.4388
+[Epoch: 185 (MSE)] Train: 89.7080 | Valid : 98.3048 | Test : 196.8150
+[Epoch: 185 (MAPE)] Train: 19.3142 | Valid : 19.3458 | Test : 49.0578
+[Epoch: 186 (MSE)] Train: 89.1446 | Valid : 98.0963 | Test : 195.6986
+[Epoch: 186 (MAPE)] Train: 19.2942 | Valid : 19.3562 | Test : 48.6045
+[Epoch: 187 (MSE)] Train: 89.1218 | Valid : 98.5597 | Test : 196.2400
+[Epoch: 187 (MAPE)] Train: 19.1383 | Valid : 20.0196 | Test : 49.4501
+[Epoch: 188 (MSE)] Train: 89.1739 | Valid : 98.4717 | Test : 195.8426
+[Epoch: 188 (MAPE)] Train: 19.5073 | Valid : 19.7730 | Test : 49.6106
+[Epoch: 189 (MSE)] Train: 89.4453 | Valid : 99.0816 | Test : 196.5070
+[Epoch: 189 (MAPE)] Train: 19.2193 | Valid : 19.4481 | Test : 47.5841
+[Epoch: 190 (MSE)] Train: 89.2973 | Valid : 98.2083 | Test : 196.6689
+[Epoch: 190 (MAPE)] Train: 19.0672 | Valid : 19.4866 | Test : 47.8605
+[Epoch: 191 (MSE)] Train: 89.6850 | Valid : 98.9388 | Test : 196.3620
+[Epoch: 191 (MAPE)] Train: 19.1529 | Valid : 19.1209 | Test : 47.1511
+[Epoch: 192 (MSE)] Train: 89.5903 | Valid : 99.1073 | Test : 197.5780
+[Epoch: 192 (MAPE)] Train: 19.1657 | Valid : 19.3702 | Test : 47.4892
+[Epoch: 193 (MSE)] Train: 88.9007 | Valid : 98.7640 | Test : 196.2564
+[Epoch: 193 (MAPE)] Train: 18.9974 | Valid : 19.7738 | Test : 47.5940
+[Epoch: 194 (MSE)] Train: 89.2864 | Valid : 98.9482 | Test : 196.0773
+[Epoch: 194 (MAPE)] Train: 19.1081 | Valid : 19.2315 | Test : 46.2443
+[Epoch: 195 (MSE)] Train: 89.1093 | Valid : 98.3788 | Test : 195.6167
+[Epoch: 195 (MAPE)] Train: 19.0485 | Valid : 19.4926 | Test : 46.0623
+[Epoch: 196 (MSE)] Train: 89.1515 | Valid : 98.4528 | Test : 195.5400
+[Epoch: 196 (MAPE)] Train: 18.9850 | Valid : 19.7557 | Test : 48.7863
+[Epoch: 197 (MSE)] Train: 88.9531 | Valid : 98.4657 | Test : 197.2096
+[Epoch: 197 (MAPE)] Train: 18.9192 | Valid : 19.1032 | Test : 45.7751
+[Epoch: 198 (MSE)] Train: 89.7040 | Valid : 99.0975 | Test : 196.2335
+[Epoch: 198 (MAPE)] Train: 18.9770 | Valid : 19.2828 | Test : 46.7524
+[Epoch: 199 (MSE)] Train: 89.0899 | Valid : 98.4655 | Test : 196.1290
+[Epoch: 199 (MAPE)] Train: 19.0411 | Valid : 19.4233 | Test : 47.2985
+[Epoch: 200 (MSE)] Train: 89.7785 | Valid : 100.6103 | Test : 198.9471
+[Epoch: 200 (MAPE)] Train: 19.1832 | Valid : 20.4534 | Test : 47.9732
+[Epoch: 201 (MSE)] Train: 90.5012 | Valid : 99.2547 | Test : 196.7407
+[Epoch: 201 (MAPE)] Train: 19.9330 | Valid : 20.4495 | Test : 50.7156
+[Epoch: 202 (MSE)] Train: 89.9859 | Valid : 99.7421 | Test : 198.0777
+[Epoch: 202 (MAPE)] Train: 19.0832 | Valid : 19.1686 | Test : 47.4985
+[Epoch: 203 (MSE)] Train: 89.2587 | Valid : 98.8841 | Test : 196.9560
+[Epoch: 203 (MAPE)] Train: 19.0462 | Valid : 19.3401 | Test : 47.9707
+[Epoch: 204 (MSE)] Train: 89.4434 | Valid : 99.7422 | Test : 197.6681
+[Epoch: 204 (MAPE)] Train: 19.2287 | Valid : 19.9889 | Test : 49.5625
+[Epoch: 205 (MSE)] Train: 89.1920 | Valid : 98.1212 | Test : 194.5551
+[Epoch: 205 (MAPE)] Train: 19.0688 | Valid : 19.2497 | Test : 46.1885
+[Epoch: 206 (MSE)] Train: 89.7879 | Valid : 98.8526 | Test : 197.2607
+[Epoch: 206 (MAPE)] Train: 19.0823 | Valid : 19.2235 | Test : 47.3729
+[Epoch: 207 (MSE)] Train: 89.5006 | Valid : 98.0820 | Test : 195.1796
+[Epoch: 207 (MAPE)] Train: 18.9907 | Valid : 18.8007 | Test : 44.8721
+[Epoch: 208 (MSE)] Train: 89.5348 | Valid : 99.3226 | Test : 197.0726
+[Epoch: 208 (MAPE)] Train: 18.9468 | Valid : 19.1737 | Test : 47.3908
+[Epoch: 209 (MSE)] Train: 89.2726 | Valid : 97.9508 | Test : 195.8045
+[Epoch: 209 (MAPE)] Train: 18.8451 | Valid : 19.1792 | Test : 47.0114
+[Epoch: 210 (MSE)] Train: 88.9299 | Valid : 97.7828 | Test : 195.1733
+[Epoch: 210 (MAPE)] Train: 18.6427 | Valid : 19.2714 | Test : 46.8358
+- Best loss (MSE) update!! Train: 88.9299 | Valid : 97.7828 | Test : 195.1733 at Epoch 210
+- Best loss (MAPE) update!! Train: 18.6427 | Valid : 19.2714 | Test : 46.8358 at Epoch 210
+[Epoch: 211 (MSE)] Train: 89.2725 | Valid : 98.6176 | Test : 195.9812
+[Epoch: 211 (MAPE)] Train: 19.1394 | Valid : 18.7125 | Test : 46.3130
+[Epoch: 212 (MSE)] Train: 89.7760 | Valid : 98.6714 | Test : 196.7910
+[Epoch: 212 (MAPE)] Train: 19.1668 | Valid : 19.2360 | Test : 47.7124
+[Epoch: 213 (MSE)] Train: 89.1303 | Valid : 97.9017 | Test : 196.0112
+[Epoch: 213 (MAPE)] Train: 18.9937 | Valid : 19.0961 | Test : 46.8973
+[Epoch: 214 (MSE)] Train: 89.2124 | Valid : 98.5917 | Test : 195.7650
+[Epoch: 214 (MAPE)] Train: 19.0208 | Valid : 20.9449 | Test : 49.8604
+[Epoch: 215 (MSE)] Train: 89.2924 | Valid : 99.1041 | Test : 197.2104
+[Epoch: 215 (MAPE)] Train: 19.5006 | Valid : 19.3269 | Test : 49.5963
+[Epoch: 216 (MSE)] Train: 89.7646 | Valid : 99.4085 | Test : 197.5176
+[Epoch: 216 (MAPE)] Train: 19.2941 | Valid : 20.4872 | Test : 50.7824
+[Epoch: 217 (MSE)] Train: 89.9776 | Valid : 98.1395 | Test : 194.2703
+[Epoch: 217 (MAPE)] Train: 19.3266 | Valid : 19.8813 | Test : 48.1940
+[Epoch: 218 (MSE)] Train: 88.8612 | Valid : 98.2800 | Test : 196.4201
+[Epoch: 218 (MAPE)] Train: 19.1408 | Valid : 19.5481 | Test : 47.8240
+[Epoch: 219 (MSE)] Train: 88.9633 | Valid : 98.3206 | Test : 195.5217
+[Epoch: 219 (MAPE)] Train: 18.9813 | Valid : 19.0214 | Test : 47.2363
+[Epoch: 220 (MSE)] Train: 89.5022 | Valid : 98.8359 | Test : 196.5809
+[Epoch: 220 (MAPE)] Train: 19.0213 | Valid : 20.0452 | Test : 49.5522
+[Epoch: 221 (MSE)] Train: 89.8484 | Valid : 100.3527 | Test : 197.7640
+[Epoch: 221 (MAPE)] Train: 19.5396 | Valid : 19.8168 | Test : 49.0010
+[Epoch: 222 (MSE)] Train: 89.6470 | Valid : 98.5459 | Test : 197.0722
+[Epoch: 222 (MAPE)] Train: 19.3879 | Valid : 19.4217 | Test : 50.8564
+[Epoch: 223 (MSE)] Train: 89.1623 | Valid : 99.1228 | Test : 195.8243
+[Epoch: 223 (MAPE)] Train: 19.2567 | Valid : 19.9024 | Test : 49.0402
+[Epoch: 224 (MSE)] Train: 89.0326 | Valid : 98.7790 | Test : 195.2249
+[Epoch: 224 (MAPE)] Train: 19.2002 | Valid : 19.9797 | Test : 50.1458
+[Epoch: 225 (MSE)] Train: 88.6839 | Valid : 98.6730 | Test : 196.1283
+[Epoch: 225 (MAPE)] Train: 19.2514 | Valid : 20.1194 | Test : 50.9682
+[Epoch: 226 (MSE)] Train: 88.7561 | Valid : 97.9668 | Test : 194.1203
+[Epoch: 226 (MAPE)] Train: 19.3602 | Valid : 19.5243 | Test : 48.9230
+[Epoch: 227 (MSE)] Train: 89.4628 | Valid : 98.7356 | Test : 195.9344
+[Epoch: 227 (MAPE)] Train: 19.3512 | Valid : 19.7559 | Test : 48.6909
+[Epoch: 228 (MSE)] Train: 89.0890 | Valid : 98.4444 | Test : 197.0490
+[Epoch: 228 (MAPE)] Train: 19.1073 | Valid : 19.5116 | Test : 49.5377
+[Epoch: 229 (MSE)] Train: 89.4331 | Valid : 98.6925 | Test : 195.9149
+[Epoch: 229 (MAPE)] Train: 19.1070 | Valid : 19.5895 | Test : 47.9519
+[Epoch: 230 (MSE)] Train: 88.7279 | Valid : 98.3928 | Test : 195.1082
+[Epoch: 230 (MAPE)] Train: 19.0455 | Valid : 19.9160 | Test : 49.6537
+[Epoch: 231 (MSE)] Train: 88.9138 | Valid : 98.1216 | Test : 195.7815
+[Epoch: 231 (MAPE)] Train: 19.1280 | Valid : 19.5793 | Test : 48.0920
+[Epoch: 232 (MSE)] Train: 88.7825 | Valid : 98.4146 | Test : 194.0167
+[Epoch: 232 (MAPE)] Train: 18.9537 | Valid : 19.3273 | Test : 46.6384
+[Epoch: 233 (MSE)] Train: 88.9812 | Valid : 98.2205 | Test : 195.1274
+[Epoch: 233 (MAPE)] Train: 18.8464 | Valid : 20.0360 | Test : 48.2154
+[Epoch: 234 (MSE)] Train: 88.9161 | Valid : 99.2620 | Test : 197.2005
+[Epoch: 234 (MAPE)] Train: 18.8373 | Valid : 19.1684 | Test : 45.9851
+[Epoch: 235 (MSE)] Train: 89.0374 | Valid : 98.8066 | Test : 196.4209
+[Epoch: 235 (MAPE)] Train: 18.6774 | Valid : 19.7902 | Test : 45.6099
+[Epoch: 236 (MSE)] Train: 89.1546 | Valid : 98.7361 | Test : 195.1714
+[Epoch: 236 (MAPE)] Train: 18.6923 | Valid : 19.5155 | Test : 44.8211
+[Epoch: 237 (MSE)] Train: 89.2125 | Valid : 99.4270 | Test : 195.1736
+[Epoch: 237 (MAPE)] Train: 18.6438 | Valid : 20.1392 | Test : 45.7167
+[Epoch: 238 (MSE)] Train: 89.3387 | Valid : 98.7403 | Test : 195.1535
+[Epoch: 238 (MAPE)] Train: 18.5636 | Valid : 19.1833 | Test : 45.0612
+[Epoch: 239 (MSE)] Train: 89.1005 | Valid : 99.4652 | Test : 196.9677
+[Epoch: 239 (MAPE)] Train: 18.8404 | Valid : 19.9437 | Test : 45.6304
+[Epoch: 240 (MSE)] Train: 89.0868 | Valid : 98.8705 | Test : 197.2680
+[Epoch: 240 (MAPE)] Train: 18.6480 | Valid : 19.2276 | Test : 45.2281
+[Epoch: 241 (MSE)] Train: 89.6396 | Valid : 100.1625 | Test : 198.1672
+[Epoch: 241 (MAPE)] Train: 18.7581 | Valid : 20.7689 | Test : 48.0077
+[Epoch: 242 (MSE)] Train: 89.7578 | Valid : 98.5549 | Test : 196.9155
+[Epoch: 242 (MAPE)] Train: 19.0582 | Valid : 19.2563 | Test : 46.4469
+[Epoch: 243 (MSE)] Train: 89.5272 | Valid : 98.8624 | Test : 196.1704
+[Epoch: 243 (MAPE)] Train: 19.0289 | Valid : 19.6180 | Test : 47.3829
+[Epoch: 244 (MSE)] Train: 89.2001 | Valid : 98.2405 | Test : 196.6608
+[Epoch: 244 (MAPE)] Train: 19.0286 | Valid : 19.6940 | Test : 47.4655
+[Epoch: 245 (MSE)] Train: 89.2638 | Valid : 99.0904 | Test : 196.5697
+[Epoch: 245 (MAPE)] Train: 18.6945 | Valid : 19.1062 | Test : 45.6256
+[Epoch: 246 (MSE)] Train: 89.0096 | Valid : 98.3295 | Test : 195.7941
+[Epoch: 246 (MAPE)] Train: 18.7465 | Valid : 19.4794 | Test : 47.2275
+[Epoch: 247 (MSE)] Train: 89.8032 | Valid : 98.7670 | Test : 196.9256
+[Epoch: 247 (MAPE)] Train: 19.2717 | Valid : 20.2611 | Test : 47.7077
+[Epoch: 248 (MSE)] Train: 89.4991 | Valid : 97.7091 | Test : 195.3770
+[Epoch: 248 (MAPE)] Train: 18.9802 | Valid : 19.8806 | Test : 48.4615
+- Best loss (MSE) update!! Train: 89.4991 | Valid : 97.7091 | Test : 195.3770 at Epoch 248
+- Best loss (MAPE) update!! Train: 18.9802 | Valid : 19.8806 | Test : 48.4615 at Epoch 248
+[Epoch: 249 (MSE)] Train: 89.1478 | Valid : 98.4495 | Test : 197.3327
+[Epoch: 249 (MAPE)] Train: 19.0748 | Valid : 19.2171 | Test : 47.1209
+[Epoch: 250 (MSE)] Train: 89.1388 | Valid : 98.4931 | Test : 195.6428
+[Epoch: 250 (MAPE)] Train: 18.8963 | Valid : 19.5580 | Test : 47.5695
+[Epoch: 251 (MSE)] Train: 90.4307 | Valid : 99.1865 | Test : 195.5466
+[Epoch: 251 (MAPE)] Train: 19.0582 | Valid : 20.2478 | Test : 46.1652
+[Epoch: 252 (MSE)] Train: 90.2224 | Valid : 98.7156 | Test : 196.6927
+[Epoch: 252 (MAPE)] Train: 19.2361 | Valid : 20.4020 | Test : 50.6831
+[Epoch: 253 (MSE)] Train: 89.3408 | Valid : 100.0792 | Test : 198.0963
+[Epoch: 253 (MAPE)] Train: 19.1160 | Valid : 20.8851 | Test : 47.1326
+[Epoch: 254 (MSE)] Train: 89.5697 | Valid : 99.8338 | Test : 198.1178
+[Epoch: 254 (MAPE)] Train: 19.0512 | Valid : 20.2452 | Test : 46.1171
+[Epoch: 255 (MSE)] Train: 89.9898 | Valid : 100.3858 | Test : 198.5580
+[Epoch: 255 (MAPE)] Train: 19.2073 | Valid : 21.7777 | Test : 49.9592
+[Epoch: 256 (MSE)] Train: 90.0226 | Valid : 98.2692 | Test : 197.0002
+[Epoch: 256 (MAPE)] Train: 19.1258 | Valid : 19.9389 | Test : 45.8125
+[Epoch: 257 (MSE)] Train: 90.0848 | Valid : 99.3072 | Test : 195.9518
+[Epoch: 257 (MAPE)] Train: 19.0807 | Valid : 21.1137 | Test : 48.1317
+[Epoch: 258 (MSE)] Train: 89.5758 | Valid : 98.2894 | Test : 196.3587
+[Epoch: 258 (MAPE)] Train: 19.2060 | Valid : 19.4544 | Test : 46.3795
+[Epoch: 259 (MSE)] Train: 89.1374 | Valid : 97.0594 | Test : 195.6825
+[Epoch: 259 (MAPE)] Train: 19.0736 | Valid : 19.2229 | Test : 47.1433
+- Best loss (MSE) update!! Train: 89.1374 | Valid : 97.0594 | Test : 195.6825 at Epoch 259
+- Best loss (MAPE) update!! Train: 19.0736 | Valid : 19.2229 | Test : 47.1433 at Epoch 259
+[Epoch: 260 (MSE)] Train: 89.5129 | Valid : 99.2537 | Test : 196.7460
+[Epoch: 260 (MAPE)] Train: 18.9555 | Valid : 19.5707 | Test : 45.9722
+[Epoch: 261 (MSE)] Train: 89.0191 | Valid : 97.7817 | Test : 196.2425
+[Epoch: 261 (MAPE)] Train: 18.9769 | Valid : 19.9742 | Test : 47.0100
+[Epoch: 262 (MSE)] Train: 88.8251 | Valid : 98.4885 | Test : 196.5627
+[Epoch: 262 (MAPE)] Train: 18.9864 | Valid : 19.9681 | Test : 46.7407
+[Epoch: 263 (MSE)] Train: 89.0121 | Valid : 98.3342 | Test : 196.6816
+[Epoch: 263 (MAPE)] Train: 19.0188 | Valid : 19.8906 | Test : 47.3774
+[Epoch: 264 (MSE)] Train: 89.4285 | Valid : 99.6012 | Test : 197.3615
+[Epoch: 264 (MAPE)] Train: 18.8751 | Valid : 20.6203 | Test : 46.9823
+[Epoch: 265 (MSE)] Train: 89.4130 | Valid : 98.6802 | Test : 197.6673
+[Epoch: 265 (MAPE)] Train: 18.6859 | Valid : 19.8604 | Test : 45.8691
+[Epoch: 266 (MSE)] Train: 89.2518 | Valid : 97.9257 | Test : 195.4792
+[Epoch: 266 (MAPE)] Train: 18.8490 | Valid : 19.7726 | Test : 46.9032
+[Epoch: 267 (MSE)] Train: 88.8249 | Valid : 99.8728 | Test : 197.3538
+[Epoch: 267 (MAPE)] Train: 18.8355 | Valid : 20.6415 | Test : 47.1068
+[Epoch: 268 (MSE)] Train: 89.3988 | Valid : 97.7134 | Test : 194.9300
+[Epoch: 268 (MAPE)] Train: 18.9730 | Valid : 19.5173 | Test : 46.0217
+[Epoch: 269 (MSE)] Train: 90.0655 | Valid : 100.0196 | Test : 197.3120
+[Epoch: 269 (MAPE)] Train: 19.0573 | Valid : 20.6325 | Test : 46.1423
+[Epoch: 270 (MSE)] Train: 90.0997 | Valid : 98.9167 | Test : 196.1329
+[Epoch: 270 (MAPE)] Train: 19.2191 | Valid : 20.0545 | Test : 46.5271
+[Epoch: 271 (MSE)] Train: 89.4930 | Valid : 98.3753 | Test : 195.0275
+[Epoch: 271 (MAPE)] Train: 19.4190 | Valid : 19.5084 | Test : 45.4250
+[Epoch: 272 (MSE)] Train: 89.5687 | Valid : 99.1542 | Test : 196.2282
+[Epoch: 272 (MAPE)] Train: 19.0020 | Valid : 20.9450 | Test : 49.0749
+[Epoch: 273 (MSE)] Train: 89.7799 | Valid : 98.5703 | Test : 195.7768
+[Epoch: 273 (MAPE)] Train: 19.2087 | Valid : 20.8109 | Test : 48.6830
+[Epoch: 274 (MSE)] Train: 90.4649 | Valid : 99.5307 | Test : 196.7300
+[Epoch: 274 (MAPE)] Train: 19.1937 | Valid : 19.6644 | Test : 45.4606
+[Epoch: 275 (MSE)] Train: 89.5900 | Valid : 98.3072 | Test : 195.2257
+[Epoch: 275 (MAPE)] Train: 18.5870 | Valid : 19.5426 | Test : 42.9767
+[Epoch: 276 (MSE)] Train: 89.3927 | Valid : 99.1206 | Test : 195.8333
+[Epoch: 276 (MAPE)] Train: 18.7329 | Valid : 19.9237 | Test : 45.8551
+[Epoch: 277 (MSE)] Train: 90.3942 | Valid : 98.6374 | Test : 195.0632
+[Epoch: 277 (MAPE)] Train: 18.9801 | Valid : 20.9253 | Test : 46.3850
+[Epoch: 278 (MSE)] Train: 89.8970 | Valid : 99.4946 | Test : 195.8163
+[Epoch: 278 (MAPE)] Train: 19.2821 | Valid : 21.3991 | Test : 49.1518
+[Epoch: 279 (MSE)] Train: 89.9983 | Valid : 98.9172 | Test : 197.9476
+[Epoch: 279 (MAPE)] Train: 18.9379 | Valid : 19.1758 | Test : 42.1792
+[Epoch: 280 (MSE)] Train: 88.8666 | Valid : 98.6580 | Test : 196.3719
+[Epoch: 280 (MAPE)] Train: 18.6012 | Valid : 20.3240 | Test : 43.7345
+[Epoch: 281 (MSE)] Train: 89.7605 | Valid : 98.7895 | Test : 197.3120
+[Epoch: 281 (MAPE)] Train: 18.5125 | Valid : 18.7837 | Test : 41.9875
+[Epoch: 282 (MSE)] Train: 89.6885 | Valid : 98.1008 | Test : 194.7062
+[Epoch: 282 (MAPE)] Train: 18.6266 | Valid : 19.2394 | Test : 44.8901
+[Epoch: 283 (MSE)] Train: 89.5436 | Valid : 99.7313 | Test : 197.0566
+[Epoch: 283 (MAPE)] Train: 18.6914 | Valid : 21.0623 | Test : 45.6883
+[Epoch: 284 (MSE)] Train: 89.6574 | Valid : 98.3289 | Test : 196.5379
+[Epoch: 284 (MAPE)] Train: 18.8894 | Valid : 19.7638 | Test : 44.5397
+[Epoch: 285 (MSE)] Train: 89.1510 | Valid : 98.9898 | Test : 196.0321
+[Epoch: 285 (MAPE)] Train: 18.8355 | Valid : 20.8659 | Test : 47.1374
+[Epoch: 286 (MSE)] Train: 89.6828 | Valid : 99.3926 | Test : 195.1637
+[Epoch: 286 (MAPE)] Train: 18.8155 | Valid : 21.1497 | Test : 45.2114
+[Epoch: 287 (MSE)] Train: 90.2370 | Valid : 99.5015 | Test : 195.5336
+[Epoch: 287 (MAPE)] Train: 18.6386 | Valid : 20.4894 | Test : 46.4974
+[Epoch: 288 (MSE)] Train: 89.7123 | Valid : 98.9382 | Test : 196.9804
+[Epoch: 288 (MAPE)] Train: 19.2949 | Valid : 19.1033 | Test : 45.8621
+[Epoch: 289 (MSE)] Train: 89.3929 | Valid : 98.4490 | Test : 193.3270
+[Epoch: 289 (MAPE)] Train: 19.2124 | Valid : 19.1358 | Test : 43.5386
+[Epoch: 290 (MSE)] Train: 88.6718 | Valid : 97.9340 | Test : 194.2996
+[Epoch: 290 (MAPE)] Train: 18.7469 | Valid : 19.9406 | Test : 45.4727
+[Epoch: 291 (MSE)] Train: 89.0943 | Valid : 99.0671 | Test : 195.9754
+[Epoch: 291 (MAPE)] Train: 18.8115 | Valid : 20.0229 | Test : 45.0482
+[Epoch: 292 (MSE)] Train: 89.3827 | Valid : 97.9518 | Test : 194.3880
+[Epoch: 292 (MAPE)] Train: 19.1380 | Valid : 19.5666 | Test : 45.8896
+[Epoch: 293 (MSE)] Train: 88.8580 | Valid : 97.8377 | Test : 196.5880
+[Epoch: 293 (MAPE)] Train: 19.0362 | Valid : 19.8825 | Test : 48.6996
+[Epoch: 294 (MSE)] Train: 89.0791 | Valid : 99.6056 | Test : 195.4045
+[Epoch: 294 (MAPE)] Train: 18.9550 | Valid : 21.5181 | Test : 49.1357
+[Epoch: 295 (MSE)] Train: 89.6939 | Valid : 99.6477 | Test : 196.1150
+[Epoch: 295 (MAPE)] Train: 18.9640 | Valid : 19.9202 | Test : 46.2373
+[Epoch: 296 (MSE)] Train: 89.3487 | Valid : 99.0055 | Test : 196.1364
+[Epoch: 296 (MAPE)] Train: 18.8656 | Valid : 19.7367 | Test : 45.9449
+[Epoch: 297 (MSE)] Train: 89.0496 | Valid : 98.5674 | Test : 197.2675
+[Epoch: 297 (MAPE)] Train: 18.7373 | Valid : 20.1547 | Test : 44.9827
+[Epoch: 298 (MSE)] Train: 89.0187 | Valid : 98.6307 | Test : 197.8874
+[Epoch: 298 (MAPE)] Train: 18.7135 | Valid : 20.0520 | Test : 46.0144
+[Epoch: 299 (MSE)] Train: 88.5978 | Valid : 98.8489 | Test : 196.3965
+[Epoch: 299 (MAPE)] Train: 18.5150 | Valid : 20.6170 | Test : 46.4893
+[Epoch: 300 (MSE)] Train: 89.3538 | Valid : 97.8499 | Test : 196.7985
+[Epoch: 300 (MAPE)] Train: 18.6550 | Valid : 19.7924 | Test : 45.4740
+[Final (BEST MSE)] Train: 89.1374 | Valid : 97.0594 | Test : 195.6825 at Epoch 259
+[Final (BEST MAPE)] Train: 19.0736 | Valid : 19.2229 | Test : 47.1433 at Epoch 259
