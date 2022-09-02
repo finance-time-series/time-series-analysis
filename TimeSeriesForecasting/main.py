@@ -14,7 +14,6 @@ from config import get_config
 import models as models
 
 from utils import getDataloaders, NCDE_USE_TYPE
-from torch.utils.tensorboard import SummaryWriter
 import math
 from sklearn.metrics import mean_absolute_percentage_error
 
@@ -99,10 +98,6 @@ if __name__ == "__main__":
     gpu = 'cuda:' + args.device
     device = torch.device(gpu)
 
-    tb_train_writer = SummaryWriter(log_dir=f'../_tensorboard/{args.model}/train')
-    tb_valid_writer = SummaryWriter(log_dir=f'../_tensorboard/{args.model}/valid')
-    tb_test_writer = SummaryWriter(log_dir=f'../_tensorboard/{args.model}/test')
-
     # get the model and the pre-processing ftn
     trainModel, preprocessData, isNCDE, typeNCDE = getModelandDataProcessor(args)
 
@@ -161,10 +156,6 @@ if __name__ == "__main__":
                                                                                                            bestTestMAPE,
                                                                                                            bestEpoch))
 
-        tb_train_writer.add_scalar("{} / {} / Loss: mse".format(args.data, args.model), train_mse_loss / len(train_dataloader), epoch)
-        tb_valid_writer.add_scalar("{} / {} / Loss: mse".format(args.data, args.model), valid_mse_loss / len(valid_dataloader), epoch)
-        tb_test_writer.add_scalar("{} / {} / Loss: mse".format(args.data, args.model), test_mse_loss / len(test_dataloader), epoch)
-
     print(
         "[Final (BEST MSE)] Train: {:.4f} | Valid : {:.4f} | Test : {:.4f} at Epoch {:3}".format(bestTrainMSE, bestValidMSE,
                                                                                              bestTestMSE, bestEpoch))
@@ -172,10 +163,3 @@ if __name__ == "__main__":
     print(
         "[Final (BEST MAPE)] Train: {:.4f} | Valid : {:.4f} | Test : {:.4f} at Epoch {:3}".format(bestTrainMAPE, bestValidMAPE,
                                                                                              bestTestMAPE, bestEpoch))
-
-    tb_train_writer.flush()
-    tb_train_writer.close()
-    tb_valid_writer.flush()
-    tb_valid_writer.close()
-    tb_test_writer.flush()
-    tb_test_writer.close()
